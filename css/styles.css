@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  /* 62.5 of 16 = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  word-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.container {
+  padding: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.main-heading {
+  margin: 0;
+  color: gray;
+  font-size: 3.5rem;
+}
+
+.main-heading::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.822);
+  margin: 2rem 0;
+}
+
+.workspace {
+  text-align: center;
+  background-color: #eee;
+  padding: 3rem 2rem;
+}
+
+.workspace h2 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.form-group {
+  padding: 3rem 0;
+}
+
+.form-control {
+  width: 100%;
+  outline: none;
+  padding: 1rem 2rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin: 2rem 0;
+  font-size: 1.7rem;
+}
+
+.form-control:focus {
+  border-color: dodgerblue;
+}
+
+label {
+  cursor: pointer;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  white-space: nowrap;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: #fff;
+  text-align: center;
+  transition: all 0.15s;
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: rgb(21, 101, 181);
+}
+
+.btn--warning {
+  background-color: rgb(222, 197, 52);
+}
+
+.btn--warning:hover {
+  background-color: rgb(199, 172, 21);
+}
+
+.btn--danger {
+  background-color: red;
+}
+
+.btn--danger:hover {
+  background-color: rgb(191, 15, 15);
+}
+
+/* Output */
+
+.output {
+  text-align: center;
+  background-color: #eee;
+  padding: 3rem 0;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+footer.container {
+  padding: 0 3rem;
+}
+
+.footer-subtitle::before {
+  content: "";
+  display: block;
+  height: 0.5px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.822);
+  margin-bottom: 1rem;
+}

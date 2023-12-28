@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TODO: favicon meta key words, meta description -->
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="main-heading">Bookmarker</h1>
+      <div class="workspace">
+        <h2>Bookmark your favorite sites</h2>
+        <div class="form-group">
+          <label for="siteName">Site Name: </label>
+          <input
+            class="form-control"
+            type="text"
+            name="siteName"
+            id="siteName"
+            placeholder="Bookmark Name"
+          />
+          <label for="siteUrl">Site URL: </label>
+          <input
+            class="form-control"
+            type="text"
+            name="siteUrl"
+            id="siteUrl"
+            placeholder="Bookmark URL"
+          />
+          <button id="addBtn" disabled="disabled" class="btn">Submit</button>
+        </div>
+      </div>
+      <input
+        onkeyup="search(this.value)"
+        type="text"
+        class="form-control"
+        placeholder="Search by bookmark name.."
+      />
+      <div class="output">
+        <table>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="container">
+      <p class="footer-subtitle">Â &copy; 2019 Bookmarker Inc.</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
